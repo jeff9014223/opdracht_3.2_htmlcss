@@ -1,0 +1,66 @@
+<form action="" method="post">
+    <div>
+        <label for="voornaam">Voornaam</label>
+        <input type="text" name="voornaam" pattern="/^([^0-9]*)$/" required>
+    </div>
+    <div>
+        <label for="achternaam">Achternaam</label>
+        <input type="text" name="achternaam" pattern="/^([^0-9]*)$/" required>
+    </div>
+    <div>
+        <label for="geslacht">Geslacht</label>
+        <select name="geslacht" required>
+            <option value="man" default>Man</option>
+            <option value="vrouw">Vrouw</option>
+        </select>
+    </div>
+    <div>
+        <label for="adres">Straat + Huisnummer</label>
+        <input type="text" name="adres" required>
+    </div>
+    <div>
+        <label for="postcode">Postcode</label>
+        <input type="text" name="postcode" required>
+    </div>
+    <div>
+        <label for="stad">Stad</label>
+        <input type="text" name="stad" required>
+    </div>
+    <div>
+        <label for="land">Land</label>
+        <input type="text" name="land" required>
+    </div>
+    <div>
+        <label for="bsn">BSN Nummer</label>
+        <input type="text" name="bsn" maxlength="9" required>
+    </div>
+    <div>
+        <label for="vakantie_land">Vakantie Land</label>
+        <select name="vakantie_land" required>
+            <option value="nl">Nederland</option>
+            <option value="ger">Duitsland</option>
+            <option value="spa">Spanje</option>
+        </select>
+    </div>
+    <div>
+        <label for="vertrek">Vertrek</label>
+        <input type="date" name="vertrek" required>
+    </div>
+    <div>
+        <label for="terugkomst">Terugkomst</label>
+        <input type="date" name="terugkomst" required>
+    </div>
+    <div>
+        <label for="reisgenoten">Aantal Reisgenoten</label>
+        <input type="number" name="reisgenoten" required>
+    </div>
+    <div> 
+        <label for="email">Email</label>
+        <input type="email" name="email" required>
+    </div>
+    <div>
+        <label for="wachtwoord">Wachtwoord</label>
+        <input type="password" name="wachtwoord" required>
+    </div>
+    <button type="submit">Boek nu</button>
+</form>
